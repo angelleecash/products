@@ -32,6 +32,12 @@ const GLchar * ccPosition_uColor_frag =
 const GLchar * ccPosition_uColor_vert =
 #include "ccShader_Position_uColor_vert.h"
 
+const GLchar * ccMyShader_frag =
+#include "ccMyShader_frag.h"
+const GLchar * ccMyShader_vert =
+#include "ccMyShader_vert.h"
+
+
 //
 const GLchar * ccPositionColor_frag =
 #include "ccShader_PositionColor_frag.h"

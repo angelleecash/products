@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "MyNode.h"
 
 USING_NS_CC;
 
@@ -71,7 +72,10 @@ bool HelloWorld::init()
     pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
+    //this->addChild(pSprite, 0);
+    
+    MyNode* myNode = new MyNode(0, 0);
+    this->addChild(myNode);
     
     return true;
 }

@@ -160,6 +160,7 @@
 		BA2038CD187AD2CB007144D3 /* CCTouchHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA203841187AD2CB007144D3 /* CCTouchHandler.cpp */; };
 		BA2038D0187ADDFC007144D3 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2038CE187ADDFC007144D3 /* libcurl.a */; };
 		BA2038D1187ADDFC007144D3 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2038CF187ADDFC007144D3 /* libwebp.a */; };
+		BA51F58E187C385700D868A7 /* MyNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA51F58D187C385700D868A7 /* MyNode.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -527,6 +528,10 @@
 		BA203842187AD2CB007144D3 /* CCTouchHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTouchHandler.h; sourceTree = "<group>"; };
 		BA2038CE187ADDFC007144D3 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../libs/cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		BA2038CF187ADDFC007144D3 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebp.a; path = ../libs/cocos2dx/platform/third_party/ios/libraries/libwebp.a; sourceTree = "<group>"; };
+		BA51F58A187C35ED00D868A7 /* ccMyShader_frag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccMyShader_frag.h; sourceTree = "<group>"; };
+		BA51F58B187C35ED00D868A7 /* ccMyShader_vert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccMyShader_vert.h; sourceTree = "<group>"; };
+		BA51F58C187C380700D868A7 /* MyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyNode.h; path = ../Classes/MyNode.h; sourceTree = "<group>"; };
+		BA51F58D187C385700D868A7 /* MyNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyNode.cpp; path = ../Classes/MyNode.cpp; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -596,6 +601,8 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
+				BA51F58C187C380700D868A7 /* MyNode.h */,
+				BA51F58D187C385700D868A7 /* MyNode.cpp */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1059,6 +1066,8 @@
 		BA2037CA187AD2CB007144D3 /* shaders */ = {
 			isa = PBXGroup;
 			children = (
+				BA51F58A187C35ED00D868A7 /* ccMyShader_frag.h */,
+				BA51F58B187C35ED00D868A7 /* ccMyShader_vert.h */,
 				BA2037CB187AD2CB007144D3 /* CCGLProgram.cpp */,
 				BA2037CC187AD2CB007144D3 /* CCGLProgram.h */,
 				BA2037CD187AD2CB007144D3 /* ccGLStateCache.cpp */,
@@ -1502,6 +1511,7 @@
 				BA2038CB187AD2CB007144D3 /* CCTouch.cpp in Sources */,
 				BA2038CC187AD2CB007144D3 /* CCTouchDispatcher.cpp in Sources */,
 				BA2038CD187AD2CB007144D3 /* CCTouchHandler.cpp in Sources */,
+				BA51F58E187C385700D868A7 /* MyNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
