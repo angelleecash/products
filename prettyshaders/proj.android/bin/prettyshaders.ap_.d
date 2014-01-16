@@ -10,5 +10,6 @@
 /Users/chenliang/git_projects/products/prettyshaders/proj.android/assets/CloseSelected.png \
 /Users/chenliang/git_projects/products/prettyshaders/proj.android/assets/fonts \
 /Users/chenliang/git_projects/products/prettyshaders/proj.android/assets/HelloWorld.png \
+/Users/chenliang/git_projects/products/prettyshaders/proj.android/assets/herthstone.jpg \
 /Users/chenliang/git_projects/products/prettyshaders/proj.android/assets/fonts/Marker Felt.ttf \
 /Users/chenliang/git_projects/products/prettyshaders/proj.android/bin/AndroidManifest.xml \

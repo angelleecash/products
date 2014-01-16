@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "cocos2d::CCGLProgram::setUniformsForBuiltins:CCGLProgram.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "matrixP">
+            </PersistentString>
+            <PersistentString
+               value = "this">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCEGLViewProtocol::setViewPortInPoints:CCEGLViewProtocol.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "y * m_fScaleY + m_obViewPortRect.origin.y">
+            </PersistentString>
+            <PersistentString
+               value = "m_obViewPortRect">
+            </PersistentString>
+            <PersistentString
+               value = "h * m_fScaleY">
+            </PersistentString>
+            <PersistentString
+               value = "x * m_fScaleX + m_obViewPortRect.origin.x">
+            </PersistentString>
+            <PersistentString
+               value = "w * m_fScaleX">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCDirector::setGLDefaultValues:CCDirector.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_eProjection">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCDirector::setProjection:CCDirector.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_obWinSizeInPoints">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

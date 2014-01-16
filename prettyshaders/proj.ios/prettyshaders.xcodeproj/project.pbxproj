@@ -161,6 +161,7 @@
 		BA2038D0187ADDFC007144D3 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2038CE187ADDFC007144D3 /* libcurl.a */; };
 		BA2038D1187ADDFC007144D3 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2038CF187ADDFC007144D3 /* libwebp.a */; };
 		BA51F58E187C385700D868A7 /* MyNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA51F58D187C385700D868A7 /* MyNode.cpp */; };
+		BAA8432B187D788F00377CBF /* herthstone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAA8432A187D788F00377CBF /* herthstone.jpg */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -532,6 +533,7 @@
 		BA51F58B187C35ED00D868A7 /* ccMyShader_vert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccMyShader_vert.h; sourceTree = "<group>"; };
 		BA51F58C187C380700D868A7 /* MyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyNode.h; path = ../Classes/MyNode.h; sourceTree = "<group>"; };
 		BA51F58D187C385700D868A7 /* MyNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyNode.cpp; path = ../Classes/MyNode.cpp; sourceTree = "<group>"; };
+		BAA8432A187D788F00377CBF /* herthstone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = herthstone.jpg; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -652,6 +654,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BAA8432A187D788F00377CBF /* herthstone.jpg */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -1305,7 +1308,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "prettyshaders" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1360,6 +1363,7 @@
 				BA203850187AD2CB007144D3 /* Android.mk in Resources */,
 				BA20386A187AD2CB007144D3 /* ChangeLog in Resources */,
 				BA20386B187AD2CB007144D3 /* CMakeLists.txt in Resources */,
+				BAA8432B187D788F00377CBF /* herthstone.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1529,10 +1533,14 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1578,6 +1586,7 @@
 					"\"$(SRCROOT)/platform/third_party/win32/libraries\"",
 					"\"$(SRCROOT)/../libs/cocos2dx/platform/third_party/ios/libraries\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-O2";
 				PRODUCT_NAME = prettyshaders;
 				PROVISIONING_PROFILE = "";
@@ -1592,10 +1601,14 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1639,6 +1652,7 @@
 					"\"$(SRCROOT)/platform/third_party/win32/libraries\"",
 					"\"$(SRCROOT)/../libs/cocos2dx/platform/third_party/ios/libraries\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = prettyshaders;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1653,6 +1667,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

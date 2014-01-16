@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "MyNode.h"
 
 USING_NS_CC;
 
@@ -16,17 +17,41 @@ bool AppDelegate::applicationDidFinishLaunching() {
     CCDirector* pDirector = CCDirector::sharedDirector();
     CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
 
+    
+    
     pDirector->setOpenGLView(pEGLView);
-	
+    
+    
+	pEGLView->setDesignResolutionSize(1024, 768, kResolutionNoBorder);
     // turn on display FPS
-    pDirector->setDisplayStats(true);
+    //pDirector->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
-    pDirector->setAnimationInterval(1.0 / 60);
+    pDirector->setAnimationInterval(1.0 / 30);
 
     // create a scene. it's an autorelease object
     CCScene *pScene = HelloWorld::scene();
 
+    /*
+    CCSprite* imageSprite = CCSprite::create("herthstone.jpg");
+    imageSprite->cocos2d::CCNode::setPosition(pEGLView->getDesignResolutionSize().width/2, pEGLView->getDesignResolutionSize().height/2);
+    pScene->addChild(imageSprite);
+    imageSprite->setAnchorPoint(CCPoint(0.5,0.5));
+     */
+    //imageSprite->setAnchorPoint(CCPoint(0.,0.));
+    
+    MyNode* myNode = new MyNode(0, 0, pEGLView->getViewPortRect().size.width, pEGLView->getViewPortRect().size.height);
+    //MyNode* myNode = new MyNode(-pEGLView->getVisibleOrigin().x, -pEGLView->getVisibleOrigin().y, pEGLView->getVisibleSize().width, pEGLView->getVisibleSize().height);
+    //myNode->setPosition(CCPoint(0, 0));
+    //myNode->setAnchorPoint(CCPoint(0, 0));
+    
+    pScene->addChild(myNode);
+    
+    //myNode->setAnchorPoint(CCPoint(.5f, .5f));
+    //myNode->setPosition(pEGLView->getDesignResolutionSize().width/2, 0);
+    
+    //pDirector->
+    
     // run
     pDirector->runWithScene(pScene);
 

@@ -16,7 +16,7 @@ USING_NS_CC;
 class MyNode : public CCNode
 {
 public:
-    MyNode(float x, float y);
+    MyNode(float x, float y, float width, float height);
     virtual void draw(void);
     
     ccV3F_C4B_T2F_Quad m_sQuad;

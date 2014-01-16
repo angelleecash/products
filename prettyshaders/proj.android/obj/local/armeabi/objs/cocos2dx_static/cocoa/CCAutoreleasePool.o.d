@@ -1,71 +1,70 @@
 obj/local/armeabi/objs/cocos2dx_static/cocoa/CCAutoreleasePool.o: \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCAutoreleasePool.cpp \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCAutoreleasePool.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCDataVisitor.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCPlatformDefine.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h \
- /Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCArray.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/support/data_support/ccCArray.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccMacros.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCCommon.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCStdC.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h
+ ../libs//cocos2dx/cocoa/CCAutoreleasePool.cpp \
+ ../libs//cocos2dx/cocoa/CCAutoreleasePool.h \
+ ../libs//cocos2dx/cocoa/CCObject.h \
+ ../libs//cocos2dx/cocoa/CCDataVisitor.h \
+ ../libs//cocos2dx/platform/CCPlatformMacros.h \
+ ../libs//cocos2dx/include/ccConfig.h \
+ ../libs//cocos2dx/platform/CCPlatformConfig.h \
+ ../libs//cocos2dx/platform/CCPlatformConfig.h \
+ ../libs//cocos2dx/platform/android/CCPlatformDefine.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h \
+ /Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string \
+ ../libs//cocos2dx/cocoa/CCArray.h \
+ ../libs//cocos2dx/support/data_support/ccCArray.h \
+ ../libs//cocos2dx/include/ccMacros.h \
+ ../libs//cocos2dx/platform/CCCommon.h \
+ ../libs//cocos2dx/platform/CCPlatformMacros.h \
+ ../libs//cocos2dx/platform/android/CCStdC.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h \
+ ../libs//cocos2dx/include/ccConfig.h ../libs//cocos2dx/cocoa/CCObject.h
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCAutoreleasePool.h:
+../libs//cocos2dx/cocoa/CCAutoreleasePool.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h:
+../libs//cocos2dx/cocoa/CCObject.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCDataVisitor.h:
+../libs//cocos2dx/cocoa/CCDataVisitor.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h:
+../libs//cocos2dx/platform/CCPlatformMacros.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h:
+../libs//cocos2dx/include/ccConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h:
+../libs//cocos2dx/platform/CCPlatformConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h:
+../libs//cocos2dx/platform/CCPlatformConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCPlatformDefine.h:
+../libs//cocos2dx/platform/android/CCPlatformDefine.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h:
 
-/Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string:
+/Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCArray.h:
+../libs//cocos2dx/cocoa/CCArray.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/support/data_support/ccCArray.h:
+../libs//cocos2dx/support/data_support/ccCArray.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccMacros.h:
+../libs//cocos2dx/include/ccMacros.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCCommon.h:
+../libs//cocos2dx/platform/CCCommon.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h:
+../libs//cocos2dx/platform/CCPlatformMacros.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCStdC.h:
+../libs//cocos2dx/platform/android/CCStdC.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h:
+../libs//cocos2dx/include/ccConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h:
+../libs//cocos2dx/cocoa/CCObject.h:

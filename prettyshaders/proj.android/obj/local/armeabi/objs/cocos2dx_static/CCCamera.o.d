@@ -1,224 +1,220 @@
 obj/local/armeabi/objs/cocos2dx_static/CCCamera.o: \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/CCCamera.cpp \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/CCCamera.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCDataVisitor.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCPlatformDefine.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h \
- /Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccMacros.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCCommon.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCStdC.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/mat4.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/utility.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCString.h \
- /Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/functional \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCGL.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2platform.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/KHR/khrplatform.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2ext.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/draw_nodes/CCDrawingPrimitives.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccTypes.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCGeometry.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/CCDirector.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCGeometry.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCArray.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/support/data_support/ccCArray.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/label_nodes/CCLabelAtlas.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/base_nodes/CCAtlasNode.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/base_nodes/CCNode.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCAffineTransform.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCGeometry.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCArray.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/shaders/ccGLStateCache.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/shaders/CCGLProgram.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/kazmath.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/vec2.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/vec3.h \
- /Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/assert.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/mat3.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/mat4.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/quaternion.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/plane.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/aabb.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/ray2.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/script_support/CCScriptSupport.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCAccelerometer.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCAccelerometerDelegate.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCCommon.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/touch_dispatcher/CCTouch.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCSet.h \
- /Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/set \
- /Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/map \
- /Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/list \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/CCProtocols.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccTypes.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/textures/CCTexture2D.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccTypeInfo.h \
- /Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/typeinfo \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/GL/matrix.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/GL/../mat4.h \
- /Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/GL/../vec3.h
+ ../libs//cocos2dx/CCCamera.cpp ../libs//cocos2dx/CCCamera.h \
+ ../libs//cocos2dx/cocoa/CCObject.h \
+ ../libs//cocos2dx/cocoa/CCDataVisitor.h \
+ ../libs//cocos2dx/platform/CCPlatformMacros.h \
+ ../libs//cocos2dx/include/ccConfig.h \
+ ../libs//cocos2dx/platform/CCPlatformConfig.h \
+ ../libs//cocos2dx/platform/CCPlatformConfig.h \
+ ../libs//cocos2dx/platform/android/CCPlatformDefine.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h \
+ /Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string \
+ ../libs//cocos2dx/include/ccMacros.h \
+ ../libs//cocos2dx/platform/CCCommon.h \
+ ../libs//cocos2dx/platform/CCPlatformMacros.h \
+ ../libs//cocos2dx/platform/android/CCStdC.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h \
+ ../libs//cocos2dx/include/ccConfig.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/mat4.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/utility.h \
+ ../libs//cocos2dx/cocoa/CCString.h \
+ /Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/functional \
+ ../libs//cocos2dx/cocoa/CCObject.h \
+ ../libs//cocos2dx/platform/android/CCGL.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/KHR/khrplatform.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2ext.h \
+ ../libs//cocos2dx/draw_nodes/CCDrawingPrimitives.h \
+ ../libs//cocos2dx/include/ccTypes.h ../libs//cocos2dx/cocoa/CCGeometry.h \
+ ../libs//cocos2dx/CCDirector.h \
+ ../libs//cocos2dx/platform/CCPlatformMacros.h \
+ ../libs//cocos2dx/cocoa/CCGeometry.h ../libs//cocos2dx/cocoa/CCArray.h \
+ ../libs//cocos2dx/support/data_support/ccCArray.h \
+ ../libs//cocos2dx/cocoa/CCObject.h \
+ ../libs//cocos2dx/label_nodes/CCLabelAtlas.h \
+ ../libs//cocos2dx/base_nodes/CCAtlasNode.h \
+ ../libs//cocos2dx/base_nodes/CCNode.h \
+ ../libs//cocos2dx/cocoa/CCAffineTransform.h \
+ ../libs//cocos2dx/cocoa/CCGeometry.h ../libs//cocos2dx/cocoa/CCArray.h \
+ ../libs//cocos2dx/shaders/ccGLStateCache.h \
+ ../libs//cocos2dx/shaders/CCGLProgram.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/kazmath.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/vec2.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/vec3.h \
+ /Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/assert.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/mat3.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/mat4.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/quaternion.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/plane.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/aabb.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/ray2.h \
+ ../libs//cocos2dx/script_support/CCScriptSupport.h \
+ ../libs//cocos2dx/platform/android/CCAccelerometer.h \
+ ../libs//cocos2dx/platform/CCAccelerometerDelegate.h \
+ ../libs//cocos2dx/platform/CCCommon.h \
+ ../libs//cocos2dx/touch_dispatcher/CCTouch.h \
+ ../libs//cocos2dx/cocoa/CCSet.h \
+ /Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/set \
+ /Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/map \
+ /Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/list \
+ ../libs//cocos2dx/include/CCProtocols.h \
+ ../libs//cocos2dx/include/ccTypes.h \
+ ../libs//cocos2dx/textures/CCTexture2D.h \
+ ../libs//cocos2dx/include/ccTypeInfo.h \
+ /Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/typeinfo \
+ ../libs//cocos2dx/kazmath/include/kazmath/GL/matrix.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/GL/../mat4.h \
+ ../libs//cocos2dx/kazmath/include/kazmath/GL/../vec3.h
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/CCCamera.h:
+../libs//cocos2dx/CCCamera.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h:
+../libs//cocos2dx/cocoa/CCObject.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCDataVisitor.h:
+../libs//cocos2dx/cocoa/CCDataVisitor.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h:
+../libs//cocos2dx/platform/CCPlatformMacros.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h:
+../libs//cocos2dx/include/ccConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h:
+../libs//cocos2dx/platform/CCPlatformConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformConfig.h:
+../libs//cocos2dx/platform/CCPlatformConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCPlatformDefine.h:
+../libs//cocos2dx/platform/android/CCPlatformDefine.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/android/log.h:
 
-/Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string:
+/Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/string:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccMacros.h:
+../libs//cocos2dx/include/ccMacros.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCCommon.h:
+../libs//cocos2dx/platform/CCCommon.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h:
+../libs//cocos2dx/platform/CCPlatformMacros.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCStdC.h:
+../libs//cocos2dx/platform/android/CCStdC.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/math.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/stdlib.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/alloca.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/strings.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/memory.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccConfig.h:
+../libs//cocos2dx/include/ccConfig.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/mat4.h:
+../libs//cocos2dx/kazmath/include/kazmath/mat4.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/utility.h:
+../libs//cocos2dx/kazmath/include/kazmath/utility.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCString.h:
+../libs//cocos2dx/cocoa/CCString.h:
 
-/Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/functional:
+/Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/functional:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h:
+../libs//cocos2dx/cocoa/CCObject.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCGL.h:
+../libs//cocos2dx/platform/android/CCGL.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2platform.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/KHR/khrplatform.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2ext.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/GLES2/gl2ext.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/draw_nodes/CCDrawingPrimitives.h:
+../libs//cocos2dx/draw_nodes/CCDrawingPrimitives.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccTypes.h:
+../libs//cocos2dx/include/ccTypes.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCGeometry.h:
+../libs//cocos2dx/cocoa/CCGeometry.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/CCDirector.h:
+../libs//cocos2dx/CCDirector.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCPlatformMacros.h:
+../libs//cocos2dx/platform/CCPlatformMacros.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCGeometry.h:
+../libs//cocos2dx/cocoa/CCGeometry.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCArray.h:
+../libs//cocos2dx/cocoa/CCArray.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/support/data_support/ccCArray.h:
+../libs//cocos2dx/support/data_support/ccCArray.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCObject.h:
+../libs//cocos2dx/cocoa/CCObject.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/label_nodes/CCLabelAtlas.h:
+../libs//cocos2dx/label_nodes/CCLabelAtlas.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/base_nodes/CCAtlasNode.h:
+../libs//cocos2dx/base_nodes/CCAtlasNode.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/base_nodes/CCNode.h:
+../libs//cocos2dx/base_nodes/CCNode.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCAffineTransform.h:
+../libs//cocos2dx/cocoa/CCAffineTransform.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCGeometry.h:
+../libs//cocos2dx/cocoa/CCGeometry.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCArray.h:
+../libs//cocos2dx/cocoa/CCArray.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/shaders/ccGLStateCache.h:
+../libs//cocos2dx/shaders/ccGLStateCache.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/shaders/CCGLProgram.h:
+../libs//cocos2dx/shaders/CCGLProgram.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/kazmath.h:
+../libs//cocos2dx/kazmath/include/kazmath/kazmath.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/vec2.h:
+../libs//cocos2dx/kazmath/include/kazmath/vec2.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/vec3.h:
+../libs//cocos2dx/kazmath/include/kazmath/vec3.h:
 
-/Users/chenliang/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/assert.h:
+/Users/chenliang/software/android-ndk-r8d/platforms/android-8/arch-arm/usr/include/assert.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/mat3.h:
+../libs//cocos2dx/kazmath/include/kazmath/mat3.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/mat4.h:
+../libs//cocos2dx/kazmath/include/kazmath/mat4.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/quaternion.h:
+../libs//cocos2dx/kazmath/include/kazmath/quaternion.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/plane.h:
+../libs//cocos2dx/kazmath/include/kazmath/plane.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/aabb.h:
+../libs//cocos2dx/kazmath/include/kazmath/aabb.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/ray2.h:
+../libs//cocos2dx/kazmath/include/kazmath/ray2.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/script_support/CCScriptSupport.h:
+../libs//cocos2dx/script_support/CCScriptSupport.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/android/CCAccelerometer.h:
+../libs//cocos2dx/platform/android/CCAccelerometer.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCAccelerometerDelegate.h:
+../libs//cocos2dx/platform/CCAccelerometerDelegate.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/platform/CCCommon.h:
+../libs//cocos2dx/platform/CCCommon.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/touch_dispatcher/CCTouch.h:
+../libs//cocos2dx/touch_dispatcher/CCTouch.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/cocoa/CCSet.h:
+../libs//cocos2dx/cocoa/CCSet.h:
 
-/Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/set:
+/Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/set:
 
-/Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/map:
+/Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/map:
 
-/Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/list:
+/Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/list:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/CCProtocols.h:
+../libs//cocos2dx/include/CCProtocols.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccTypes.h:
+../libs//cocos2dx/include/ccTypes.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/textures/CCTexture2D.h:
+../libs//cocos2dx/textures/CCTexture2D.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/include/ccTypeInfo.h:
+../libs//cocos2dx/include/ccTypeInfo.h:
 
-/Users/chenliang/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/typeinfo:
+/Users/chenliang/software/android-ndk-r8d/sources/cxx-stl/gnu-libstdc++/4.6/include/typeinfo:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/GL/matrix.h:
+../libs//cocos2dx/kazmath/include/kazmath/GL/matrix.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/GL/../mat4.h:
+../libs//cocos2dx/kazmath/include/kazmath/GL/../mat4.h:
 
-/Users/chenliang/cocos2d-x-2.1.4/cocos2d-x-2.1.4/cocos2dx/kazmath/include/kazmath/GL/../vec3.h:
+../libs//cocos2dx/kazmath/include/kazmath/GL/../vec3.h:

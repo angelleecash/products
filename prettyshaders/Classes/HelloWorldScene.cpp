@@ -74,8 +74,7 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     //this->addChild(pSprite, 0);
     
-    MyNode* myNode = new MyNode(0, 0);
-    this->addChild(myNode);
+    
     
     return true;
 }

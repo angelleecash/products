@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "kmGLPushMatrix:matrix.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "&amp;modelview_matrix_stack">
+            </PersistentString>
+            <PersistentString
+               value = "current_stack">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCNode::visit():CCNode.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCDirector::setProjection(cocos2d::ccDirectorProjection):CCDirector.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_obWinSizeInPoints">
+            </PersistentString>
+            <PersistentString
+               value = "size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate::applicationDidFinishLaunching():AppDelegate.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "pEGLView-&gt;getViewPortRect()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -8,11 +8,11 @@
 
 #include "MyNode.h"
 
-MyNode::MyNode(float x, float y)
+MyNode::MyNode(float x, float y, float width, float height)
 {
     setShaderProgram(CCShaderCache::sharedShaderCache()->programForKey(kCCShader_MyShader));
     
-    p.setPoint(100, 80);
+    p.setPoint(width, height);
     
     CCPoint bl(x,y);
     CCPoint br(bl.x + p.x, bl.y);
@@ -23,6 +23,8 @@ MyNode::MyNode(float x, float y)
     m_sQuad.br.vertices = vertex3(br.x, br.y, 0);
     m_sQuad.tl.vertices = vertex3(tl.x, tl.y, 0);
     m_sQuad.tr.vertices = vertex3(tr.x, tr.y, 0);
+    
+    //setContentSize(CCSize(width, height));
 }
 
 void MyNode::draw(void)
@@ -42,11 +44,13 @@ void MyNode::draw(void)
     }
      */
     
-    ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position  );
+    ccGLBindTexture2D(0);
+    ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position | kCCVertexAttribFlag_Color );
+    //ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position  );
     
     //getShaderProgram();
     
-    glUniform1f(glGetUniformLocation(m_pShaderProgram->getProgram(), "iGlobalTime"), clock());
+    glUniform1f(glGetUniformLocation(m_pShaderProgram->getProgram(), "iGlobalTime"), clock()*1.0);
     glUniform3f(glGetUniformLocation(m_pShaderProgram->getProgram(), "iResolution"), p.x, p.y, 0);
     
 #define kQuadSize sizeof(m_sQuad.bl)
