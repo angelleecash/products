@@ -40,6 +40,7 @@ void main()								\n\
 "    \n\
 uniform float iGlobalTime;\n\
 uniform vec3 iResolution;\n\
+uniform vec3 iOffset;\n\
 float noise(vec3 p) //Thx to Las^Mercury        \n\
 {        \n\
 vec3 i = floor(p);        \n\
@@ -102,8 +103,9 @@ return vec4(p,glow);        \n\
 void main()        \n\
 {        \n\
 //vec3 iResolution = vec3(800.0, 600.0, 1.0);\n\
-vec2 v = -1.0 + 2.0 * gl_FragCoord.xy / iResolution.xy;        \n\
-v.x *= iResolution.x/iResolution.y;        \n\
+//vec2 v = -1.0 + 2.0 * gl_FragCoord.xy / iResolution.xy;        \n\
+//v.x *= iResolution.x/iResolution.y;        \n\
+vec2 v = -1.0 + 2.0 * (gl_FragCoord.xy - iOffset.xy)/iResolution.xy;\n\
 vec3 org = vec3(0.,-2.,4.);        \n\
 vec3 dir   = normalize(vec3(v.x*1.6,-v.y,-1.5));        \n\
 vec4 p = Raymarche(org,dir);        \n\

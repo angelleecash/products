@@ -55,7 +55,7 @@ bool HelloWorld::init()
 
     // add a label shows "Hello World"
     // create and initialize a label
-    
+    /*
     CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Arial", 24);
     
     // position the label on the center of the screen
@@ -74,7 +74,7 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     //this->addChild(pSprite, 0);
     
-    
+    */
     
     return true;
 }

@@ -18,6 +18,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
 
     
+    glEnable(GL_DEPTH_TEST);
     
     pDirector->setOpenGLView(pEGLView);
     
@@ -27,7 +28,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //pDirector->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
-    pDirector->setAnimationInterval(1.0 / 30);
+    pDirector->setAnimationInterval(1.0 / 30.0);
 
     // create a scene. it's an autorelease object
     CCScene *pScene = HelloWorld::scene();
@@ -40,17 +41,29 @@ bool AppDelegate::applicationDidFinishLaunching() {
      */
     //imageSprite->setAnchorPoint(CCPoint(0.,0.));
     
-    MyNode* myNode = new MyNode(0, 0, pEGLView->getViewPortRect().size.width, pEGLView->getViewPortRect().size.height);
-    //MyNode* myNode = new MyNode(-pEGLView->getVisibleOrigin().x, -pEGLView->getVisibleOrigin().y, pEGLView->getVisibleSize().width, pEGLView->getVisibleSize().height);
+    //MyNode* myNode = new MyNode(pEGLView->getDesignResolutionSize().width/2, 0, pEGLView->getViewPortRect().size.width, pEGLView->getViewPortRect().size.height);
+    CCPoint size(240, 320);
+    /*
+    MyNode* myNode = new MyNode(pEGLView->getViewPortRect().size.width/2,
+                                pEGLView->getViewPortRect().size.height/2,
+                                size.x,
+                                size.y);
+    */
+    MyNode* myNode = new MyNode(pEGLView->getDesignResolutionSize().width/2,
+                                pEGLView->getDesignResolutionSize().height/2 - 200,
+                                size.x,
+                                size.y);
+    
+    //MyNode* myNode = new MyNode(0, 0, pEGLView->getDesignResolutionSize().width, pEGLView->getDesignResolutionSize().height);
+    //MyNode* myNode = new MyNode(0, 0 , pEGLView->getVisibleSize().width, pEGLView->getVisibleSize().height);
     //myNode->setPosition(CCPoint(0, 0));
-    //myNode->setAnchorPoint(CCPoint(0, 0));
+    myNode->setAnchorPoint(CCPoint(0.5, 0.0));
     
     pScene->addChild(myNode);
     
     //myNode->setAnchorPoint(CCPoint(.5f, .5f));
     //myNode->setPosition(pEGLView->getDesignResolutionSize().width/2, 0);
     
-    //pDirector->
     
     // run
     pDirector->runWithScene(pScene);

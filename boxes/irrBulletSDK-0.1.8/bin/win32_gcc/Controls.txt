@@ -1,0 +1,18 @@
+Most demos have these controls:
+
+Right Mouse Button - Shoot sphere
+Left Mouse Button - Shoot cube
+ARROW KEYS - Move camera
+P - Pause simulation
+R - Reset simulation world
+
+
+
+Unique Controls:
+
+Raycast Tank Demo:
+Q+E - Forward
+A+D - Backward
+Q+D - Turn left
+A+E - Turn right
+SPACEBAR - Fire main gun

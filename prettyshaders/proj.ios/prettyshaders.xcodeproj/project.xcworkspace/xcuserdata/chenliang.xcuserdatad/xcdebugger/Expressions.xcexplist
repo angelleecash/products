@@ -17,6 +17,14 @@
          contextName = "cocos2d::CCNode::visit():CCNode.cpp">
       </ContextState>
       <ContextState
+         contextName = "-[CCDirectorCaller startMainLoop]:CCDirectorCaller.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.interval">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "cocos2d::CCDirector::setProjection(cocos2d::ccDirectorProjection):CCDirector.cpp">
          <PersistentStrings>
             <PersistentString
@@ -32,6 +40,12 @@
          <PersistentStrings>
             <PersistentString
                value = "pEGLView-&gt;getViewPortRect()">
+            </PersistentString>
+            <PersistentString
+               value = "pEGLView-&gt;getVisibleSize().width/2-size.x/2">
+            </PersistentString>
+            <PersistentString
+               value = "pEGLView-&gt;getVisibleSize().height/2-size.y/2">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

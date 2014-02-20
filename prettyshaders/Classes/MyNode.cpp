@@ -24,7 +24,8 @@ MyNode::MyNode(float x, float y, float width, float height)
     m_sQuad.tl.vertices = vertex3(tl.x, tl.y, 0);
     m_sQuad.tr.vertices = vertex3(tr.x, tr.y, 0);
     
-    //setContentSize(CCSize(width, height));
+    setContentSize(CCSize(width, height));
+    
 }
 
 void MyNode::draw(void)
@@ -49,9 +50,10 @@ void MyNode::draw(void)
     //ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position  );
     
     //getShaderProgram();
-    
-    glUniform1f(glGetUniformLocation(m_pShaderProgram->getProgram(), "iGlobalTime"), clock()*1.0);
+    float time = CCDirector::sharedDirector()->getTotalFrames() * CCDirector::sharedDirector()->getAnimationInterval();
+    glUniform1f(glGetUniformLocation(m_pShaderProgram->getProgram(), "iGlobalTime"), time);
     glUniform3f(glGetUniformLocation(m_pShaderProgram->getProgram(), "iResolution"), p.x, p.y, 0);
+    glUniform3f(glGetUniformLocation(m_pShaderProgram->getProgram(), "iOffset"), m_sQuad.bl.vertices.x, m_sQuad.bl.vertices.y, m_sQuad.bl.vertices.z);
     
 #define kQuadSize sizeof(m_sQuad.bl)
 #ifdef EMSCRIPTEN
@@ -65,11 +67,11 @@ void MyNode::draw(void)
     int diff = offsetof( ccV3F_C4B_T2F, vertices);
     glVertexAttribPointer(kCCVertexAttrib_Position, 3, GL_FLOAT, GL_FALSE, kQuadSize, (void*) (offset + diff));
     
-    /*
+    
     // color
     diff = offsetof( ccV3F_C4B_T2F, colors);
     glVertexAttribPointer(kCCVertexAttrib_Color, 4, GL_UNSIGNED_BYTE, GL_TRUE, kQuadSize, (void*)(offset + diff));
-    */
+    
     
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     
