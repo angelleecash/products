@@ -1,0 +1,85 @@
+I/SUCCESS UNIFORM(21900): 1 0 15 uLighting 43
+I/SUCCESS UNIFORM(21900): 1 1 13 uLightCutoff 41
+I/SUCCESS UNIFORM(21900): 1 2 20 uMaterialShininess 64
+I/SUCCESS UNIFORM(21900): 1 3 14 uAmbientColor 42
+I/SUCCESS UNIFORM(21900): 1 4 4 uEyePos 4
+I/FAIL UNIFORM(21900): ******************************************************** 1 5 uUseLight
+I/FAIL UNIFORM(21900): ******************************************************** 1 6 uLightPosition
+I/FAIL UNIFORM(21900): ******************************************************** 1 7 uLightAmbient
+I/FAIL UNIFORM(21900): ******************************************************** 1 8 uLightDiffuse
+I/FAIL UNIFORM(21900): ******************************************************** 1 9 uLightSpecular
+I/FAIL UNIFORM(21900): ******************************************************** 1 10 uLightDirection
+I/FAIL UNIFORM(21900): ******************************************************** 1 11 uLightAttenuation
+I/FAIL UNIFORM(21900): ******************************************************** 1 12 uLightExponent
+I/FAIL UNIFORM(21900): ******************************************************** 1 13 uLightCutoff
+I/SUCCESS UNIFORM(21900): 1 14 0 uRenderMode 0
+I/SUCCESS UNIFORM(21900): 1 15 9 uLightSpecular 37
+I/SUCCESS UNIFORM(21900): 1 16 10 uLightDirection 38
+I/SUCCESS UNIFORM(21900): 1 17 12 uLightExponent 40
+I/SUCCESS UNIFORM(21900): 1 18 11 uLightAttenuation 39
+I/FAIL UNIFORM(21900): ******************************************************** 1 19 uMaterialSpecular
+I/FAIL UNIFORM(21900): ******************************************************** 1 20 uMaterialShininess
+I/SUCCESS UNIFORM(21900): 1 21 3 uNormalize 3
+I/FAIL UNIFORM(21900): ******************************************************** 1 22 uUseTexture
+I/FAIL UNIFORM(21900): ******************************************************** 1 23 uTextureMatrix
+I/FAIL UNIFORM(21900): ******************************************************** 1 24 uUseTexMatrix
+I/SUCCESS UNIFORM(21900): 1 25 1 uMvpMatrix 1
+I/SUCCESS UNIFORM(21900): 1 26 2 uWorldMatrix 2
+I/SUCCESS UNIFORM(21900): 1 27 21 uColorMaterial 65
+I/SUCCESS UNIFORM(21900): 1 28 22 uUseTexture 66
+I/SUCCESS UNIFORM(21900): 1 29 23 uTextureMatrix 67
+I/SUCCESS UNIFORM(21900): 1 30 28 uAlphaValue 72
+I/SUCCESS UNIFORM(21900): 1 31 24 uUseTexMatrix 68
+I/SUCCESS UNIFORM(21900): 1 32 27 uAlphaTest 71
+I/SUCCESS UNIFORM(21900): 1 33 26 uClipPlane 70
+I/SUCCESS UNIFORM(21900): 1 34 25 uClip 69
+I/SUCCESS UNIFORM(21900): 1 35 29 uFog 73
+I/SUCCESS UNIFORM(21900): 1 36 30 uFogType 74
+I/log     (21900): Shader loaded
+I/log     (21900): load shader: /mnt/sdcard/Irrlicht/COGLES2Renderer2D.vsh
+I/log     (21900): Loading shader
+I/log     (21900): Loading shader
+I/SUCCESS UNIFORM(21900): 4 0 0 uOrthoMatrix 0
+I/SUCCESS UNIFORM(21900): 4 1 4 uAlphaValue 4
+I/SUCCESS UNIFORM(21900): 4 2 3 uAlphaTest 3
+I/SUCCESS UNIFORM(21900): 4 3 1 uUseTexture 1
+I/SUCCESS UNIFORM(21900): 4 4 2 uTextureUnit 2
+I/log     (21900): Shader loaded
+I/log     (21900): load shader: /mnt/sdcard/Irrlicht/COGLES2NormalMap.vsh
+I/log     (21900): Loading shader
+I/log     (21900): Loading shader
+I/SUCCESS UNIFORM(21900): 7 0 2 uLightColor 4
+I/FAIL UNIFORM(21900): ******************************************************** 7 1 uLightPos
+I/FAIL UNIFORM(21900): ******************************************************** 7 2 uLightColor
+I/SUCCESS UNIFORM(21900): 7 3 3 texture0 5
+I/SUCCESS UNIFORM(21900): 7 4 4 texture1 6
+I/log     (21900): Shader loaded
+I/log     (21900): load shader: /mnt/sdcard/Irrlicht/COGLES2ParallaxMap.vsh
+I/log     (21900): ?dX0?
+I/log     (21900): Error reading fixed pipeline vertex shader.
+I/log     (21900): ?dX0?
+I/log     (21900): Error reading fixed pipeline fragment shader.
+I/log     (21900): GLSL shader program failed to link
+I/log     (21900): L0100 A program cannot be linked unless there are any shaders attached to it
+I/log     (21900): Error linking fixed pipeline shader program.
+I/log     (21900): Shader loaded
+I/log     (21900): --------------------------------------------------------------.
+I/log     (21900): --------------------------------------------------------------.
+I/log     (21900): GL_INVALID_OPERATION
+I/=============(21900): 0 0 0
+I/=============(21900): 1 1 0
+I/Irrlicht(21900): createDevice r=1089637336 w=320 h=480
+I/Irrlicht(21900): getVideoDriver r=1339738176
+I/Irrlicht(21900): resize w=480 h=724
+D/STATUSBAR-StatusBarManagerService( 3359): manageDisableList what=0x0 pkg=system
+I/SurfaceFlinger( 1902): id=2741 Removed jrrlicht idx=4 MapSz=5
+D/STATUSBAR-StatusBarManagerService( 3359): manageDisableList what=0x0 pkg=android
+I/SurfaceFlinger( 1902): id=2741 Removed jrrlicht idx=-2 MapSz=5
+D/STATUSBAR-StatusBarManagerService( 3359): manageDisableList what=0x0 pkg=system
+D/STATUSBAR-StatusBarManagerService( 3359): manageDisableList what=0x0 pkg=android
+D/STATUSBAR-StatusBarManagerService( 3359): manageDisableList what=0x0 pkg=system
+D/STATUSBAR-StatusBarManagerService( 3359): manageDisableList what=0x0 pkg=android
+I/ApplicationUsage( 3359): Done Updating Usage Statistics in DB @ 1392919453987
+I/log     (21900): Loaded mesh
+I/log     (21900): Loaded texture
+I/Irrlicht(21900): texture /storage/sdcard0/Irrlicht/sydney.bmp result 0x521b8f20
