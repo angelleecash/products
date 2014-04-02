@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HelloWorld::ccTouchesEnded(cocos2d::CCSet*, cocos2d::CCEvent*):HelloWorldScene.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_gameOverView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

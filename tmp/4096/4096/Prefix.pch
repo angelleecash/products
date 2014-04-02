@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the '4096' target in the '4096' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif

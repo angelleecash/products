@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F717C2E5-AE04-4899-8D9D-486A95393CEB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>4096</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8E2C9EF2-707D-44F6-BD9D-A27A9468E235</key>
+		<string>https://github.com/angelleecash/products.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>4096/4096.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8E2C9EF2-707D-44F6-BD9D-A27A9468E235</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/angelleecash/products.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8E2C9EF2-707D-44F6-BD9D-A27A9468E235</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8E2C9EF2-707D-44F6-BD9D-A27A9468E235</string>
+			<key>IDESourceControlWCCName</key>
+			<string>products</string>
+		</dict>
+	</array>
+</dict>
+</plist>
