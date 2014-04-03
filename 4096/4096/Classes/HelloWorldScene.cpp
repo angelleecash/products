@@ -1,10 +1,10 @@
 #include "HelloWorldScene.h"
-#include "SimpleAudioEngine.h"
+
 #include <vector>
 #include "CCNodeLoaderLibrary.h"
 
 using namespace cocos2d;
-using namespace CocosDenshion;
+
 
 static const int MAP_ROWS = 4;
 static const int MAP_COLS = 4;
@@ -20,6 +20,11 @@ static const CCSize CELL_SIZE (CELL_AREA_SIZE.width-CELL_MARGIN.width*2, CELL_AR
 static ccColor3B BACKGROUND_COLOR = {166, 166 ,166};
 static ccColor3B CELL_BACKGROUND_COLOR = {202, 202, 202};
 
+std::string toString(int v)
+{
+    CCString* string = CCString::createWithFormat("%d", v);
+    return string->getCString();
+}
 
 int HelloWorld::createId(int cellX, int cellY)
 {
@@ -91,6 +96,33 @@ bool HelloWorld::isOver()
     return true;
 }
 
+bool HelloWorld::onAssignCCBMemberVariable(cocos2d::CCObject *pTarget, const char *pMemberVariableName, cocos2d::CCNode *pNode){
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "m_score", CCLabelTTF*, this->m_scoreLabel);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "m_bestScore", CCLabelTTF*, this->m_bestScoreLabel);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "m_background", CCLayerGradient*, this->m_background);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "m_buttonArea", CCNode*, this->m_buttonArea);
+
+    return true;
+}
+
+void HelloWorld::onYesClicked(CCObject * pSender, cocos2d::extension::CCControlEvent pCCControlEvent)
+{
+    removeChild(m_gameOverView);
+    initCells();
+}
+
+void HelloWorld::onNoClicked(CCObject * pSender, cocos2d::extension::CCControlEvent pCCControlEvent)
+{
+    CCDirector::sharedDirector()->end();
+    exit(0);
+}
+
+cocos2d::extension::SEL_CCControlHandler HelloWorld::onResolveCCBCCControlSelector(cocos2d::CCObject *pTarget, const char *pSelectorName){
+    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onYesClicked", HelloWorld::onYesClicked);
+    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onNoClicked", HelloWorld::onNoClicked);
+    return NULL;
+}
+
 CCNode* HelloWorld::addCell(CCPoint& position, int value, bool animate)
 {
     return addCell((int)position.x, (int)position.y, value, animate);
@@ -115,10 +147,11 @@ CCNode* HelloWorld::addCell(int cellX, int cellY, int value, bool animate)
     cell->setPosition(getCellPosition(cellX, cellY));
     
     CCLabelTTF* label = CCLabelTTF::create();
-    label->setString(std::to_string(value).c_str());
+    label->setString(toString(value).c_str());
     label->setHorizontalAlignment(kCCTextAlignmentCenter);
     label->setFontSize(60);
     label->setPosition(CCPoint(CELL_SIZE.width/2, (CELL_SIZE.height)/2));
+    label->setColor(ccBLACK);
 
     cell->addChild(label);
     
@@ -196,6 +229,21 @@ CCScene* HelloWorld::scene()
     return scene;
 }
 
+void HelloWorld::initCells()
+{
+    while(cellData.size() > 0)
+    {
+        removeCell(cellData.begin()->first);
+    }
+    
+    CCAssert(emptyCells.size() == MAP_ROWS*MAP_COLS, "empty cells not totally released");
+    CCAssert(cellData.size() == 0, "cell data not cleared");
+    
+    generateRandomCells();
+    generateRandomCells();
+    generateRandomCells();
+}
+
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
@@ -209,12 +257,22 @@ bool HelloWorld::init()
         return false;
     }
     
-    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ccbResources/ccbDefaultImages.plist");
+    CCSize designSize = CCDirector::sharedDirector()->getWinSize();
+    
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ccbResources/ccbDefaultImages.plist");
     
+    m_scorePanel = loadCcb("ccbi/ScorePanel.ccbi");
+    m_scorePanel->setPosition(0, designSize.height);
+    addChild(m_scorePanel);
+    
     m_gameOverView = loadCcb("ccbi/GameOver.ccbi");
+    m_gameOverView->setContentSize(designSize);
     m_gameOverView->setAnchorPoint(CCPointMake(.5, .5));
     m_gameOverView->retain();
+    
+    m_background->setContentSize(designSize);
+    
+    m_buttonArea->setPosition(designSize.width/2, designSize.height/2);
     
     colorMap[2] = ccc3(224,255,255);
     colorMap[4] = ccc3(175,238,238);
@@ -230,8 +288,6 @@ bool HelloWorld::init()
     colorMap[4096] = ccc3(0,0,255);
     
     setAnchorPoint(CCPointZero);
-    
-    CCSize designSize = CCDirector::sharedDirector()->getWinSize();
     
     float backgroundXOffset = (designSize.width - BACKGROUND_SIZE.width) / 2;
     float backgroundYOffset = 100;
@@ -267,11 +323,40 @@ bool HelloWorld::init()
     
     setContentSize(designSize);
     
-    generateRandomCells();
-    generateRandomCells();
-    generateRandomCells();
+    initCells();
+    
+    getScheduler()->scheduleUpdateForTarget(this, 0, false);
+    
+    m_bestScore = CCUserDefault::sharedUserDefault()->getIntegerForKey("best_score");
+    m_score = 0;
+    m_targetScore = 0;
+    
+    m_scoreLabel->setString(toString(m_score).c_str());
+    m_bestScoreLabel->setString(toString(m_bestScore).c_str());
     
     return true;
+}
+
+void HelloWorld::update(float delta)
+{
+    if (m_targetScore != m_score) {
+        if (abs(m_targetScore - m_score) <= 1) {
+            m_score = m_targetScore;
+        }
+        else
+        {
+            int delta = (m_targetScore - m_score) / 2;
+            m_score += delta;
+        }
+        
+        m_scoreLabel->setString(toString(m_score).c_str());
+    }
+    
+    if (m_targetScore > m_bestScore) {
+        m_bestScore = m_targetScore;
+        CCUserDefault::sharedUserDefault()->setIntegerForKey("best_score", m_bestScore);
+        m_bestScoreLabel->setString(toString(m_bestScore).c_str());
+    }
 }
 
 CCPoint HelloWorld::getCellPosition(int cellX, int cellY)
@@ -455,6 +540,8 @@ void HelloWorld::moveUp()
                     newCell->setPosition(getCellPosition(element->getE1()->position));
                     newCell->runAction(CCMoveTo::create(.2, getCellPosition(element->newPosition)));
                     
+                    m_targetScore += 50;
+                    
                 }
                     break;
                 case ProcessResultKeep:
@@ -549,6 +636,8 @@ void HelloWorld::moveDown()
                     CCNode* newCell = addCell(element->newPosition, newValue);
                     newCell->setPosition(getCellPosition(element->getE1()->position));
                     newCell->runAction(CCMoveTo::create(.2, getCellPosition(element->newPosition)));
+                    
+                    m_targetScore += 50;
                     
                 }
                     break;
@@ -658,6 +747,7 @@ void HelloWorld::moveLeft()
                     newCell->setPosition(getCellPosition(element->getE1()->position));
                     newCell->runAction(CCMoveTo::create(.2, getCellPosition(element->newPosition)));
                     
+                    m_targetScore += 50;
                 }
                     break;
                 case ProcessResultKeep:
@@ -792,6 +882,8 @@ void HelloWorld::moveRight()
                     CCNode* newCell = addCell(element->newPosition, newValue);
                     newCell->setPosition(getCellPosition(element->getE1()->position));
                     newCell->runAction(CCMoveTo::create(.2, getCellPosition(element->newPosition)));
+                    
+                    m_targetScore += 50;
                     
                 }
                     break;

@@ -2,9 +2,14 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "cocos-ext.h"
+
 #include <map>
 
 USING_NS_CC;
+USING_NS_CC_EXT;
+
+typedef std::map<int,int> MapData;
 
 typedef enum
 {
@@ -56,7 +61,10 @@ public:
 
 typedef std::vector<Element> ElementVector;
 
-class HelloWorld : public cocos2d::CCLayer
+class HelloWorld :
+public cocos2d::CCLayer
+, public CCBSelectorResolver
+, public CCBMemberVariableAssigner
 {
 public:
     // Method 'init' in cocos2d-x returns bool, instead of 'id' in cocos2d-iphone (an object pointer)
@@ -67,6 +75,10 @@ public:
     
     // a selector callback
     void menuCloseCallback(CCObject* pSender);
+    
+    virtual bool onAssignCCBMemberVariable(cocos2d::CCObject * pTarget, const char * pMemberVariableName, cocos2d::CCNode * pNode);
+    virtual cocos2d::SEL_MenuHandler onResolveCCBCCMenuItemSelector(cocos2d::CCObject * pTarget, const char * pSelectorName){return NULL;}
+	virtual cocos2d::extension::SEL_CCControlHandler onResolveCCBCCControlSelector(cocos2d::CCObject * pTarget, const char * pSelectorName);
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
@@ -74,6 +86,11 @@ public:
     virtual void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
     virtual void ccTouchesMoved(CCSet *pTouches, CCEvent *pEvent);
     virtual void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
+    
+    void onYesClicked(CCObject * pSender, cocos2d::extension::CCControlEvent pCCControlEvent);
+    void onNoClicked(CCObject * pSender, cocos2d::extension::CCControlEvent pCCControlEvent);
+    
+    void initCells();
     
     CCPoint getCellPosition(int cellX, int cellY);
     CCPoint getCellPosition(CCPoint& position);
@@ -106,6 +123,8 @@ public:
     void removeCell(CCPoint& position);
     void removeCell(int id);
     
+    virtual void update(float delta);
+    
     void releaseEmptyCell(int id);
     
     void moveUp();
@@ -121,14 +140,27 @@ public:
     
     CCPoint touchStartLocation;
     CCLayerColor* background;
-    std::map<int,int> cellData;
+    MapData cellData;
     std::vector<int> emptyCells;
     
     CCNode* loadCcb(std::string fileName);
     
     CCNode* m_gameOverView;
     
+    CCNode* m_scorePanel;
+    CCLabelTTF* m_scoreLabel;
+    CCLabelTTF* m_bestScoreLabel;
+    CCLayerGradient* m_background;
+    CCNode* m_buttonArea;
+
+    
     std::map<int,ccColor3B> colorMap;
+    
+    CC_SYNTHESIZE(int, m_score, Score);
+    CC_SYNTHESIZE(int, m_targetScore, TargetScore);
+    
+    CC_SYNTHESIZE(int, m_bestScore, BestScore);
+    
 };
 
 #endif // __HELLOWORLD_SCENE_H__
